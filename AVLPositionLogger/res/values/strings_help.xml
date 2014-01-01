@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title">Select for help with settings</string>
+  <string name="mainbut">Main Settings</string>
+  <string name="ftpbut">FTP Setup help</string>
+  <string name="savebut">Save settings</string>
+  <string name="about">About</string>
+  <string name="stub">Stub text</string>
+  <string name="nohelp">Help is not available for this selection</string>
+  <string name="title_html"><![CDATA[
+      For help on the different sections, Select the screen that you want information on
+    ]]></string>
+  <string name="main_info_html"><![CDATA[
+        <big><title>The Main Screen Settings</title></big>
+         <p> <strong><u>Vehicle ID </u></strong><br>
+         This value is <strong>required</strong>, it is used by the program for creating file names.</p>
+         <p> <strong><u>Block Number </u></strong><br>
+         This is not required to run this version, it is used to identify routes or trips. 
+        These values are used by the agency to determine time points</p>
+        <p> <strong><u>Operator ID </u></strong><br>
+        This is not required to run this version, it is for agency use.</p>
+        <p> <strong><u>Start Button</u> </strong><br> This button starts or restarts 
+        the logging. The values <strong>must</strong> be set in FTP setup for it to start. 
+        If there is a problem a message will show above the row of buttons. </p>
+        <p> <strong><u>Pause Button </u></strong><br> This button will stop the 
+        logging but save all the settings for restarting</p>
+        </p> <strong><u>Stop Button </u></strong><br> This button will stop the 
+        logging and clear the settings on this screen</p>
+        <p><b>Return to the previous screen by touching the Back button.</b> </p> 
+    ]]></string>
+  <string name="ftp_info_html"><![CDATA[
+		<big><title><center>The Ftp Screen settings</center></title></big>
+		<p> <strong><u>FTP Host </u></strong><br>
+		This is the name of the FTP site </p>
+		<p> <strong><u>FTP Site Log on Name </u></strong><br>
+		This is the User name that is used to log onto the site.</p>
+		<p> <strong><u>FTP Site Password </u></strong><br>
+		This is the password that is used to log onto the site.</p>
+		<p> <strong><u>Directory </u></strong><br>
+		This is the path to the directory on the FTP site and the SD card that the data is written to.<br>
+		Be sure the path exists on FTP site before writing to it.<br>
+		If it does not exist the FTP write will fail with no error message<br>
+		The path will be created on SD if needed.</p>
+		<p><u>Port</u><br>
+		This is the FTP port 21 is Default</p>
+		<p><u>Minutes between updates</u><br>
+		This sets how often the position is logged</p>
+		<p><u>Seconds between GPS updates</u><br>
+		This is how often the position is updated. Default is 30 seconds. The smaller the number the more 
+		frequently the GPS and time will be updated. The updates MUST be more frequent than the logging. 
+		This is to ballance between GPS acuracy and battery life. </p>
+		<p><u>Save Button</u><br>
+		Will save these values till they are changed or cleared</p>
+		<p><u>Clear Button</u><br>
+		Will remove all these settings.</p>
+		<p><u>Cancel Button</u><br>
+		Will just exit</p>												
+		<p><b>Return to the previous screen by touching the Back button.</b> </p>
+        ]]></string>
+  <string name="SaveSettings_info_html"><![CDATA[
+      	<big><title>The Save Settings and Logging Options screen</title></big>
+      	<p>Select the settings that you want to be saved for the next time you want to start this program. 
+      	A check in the check box indicates that the value will be saved</p>
+		<p> <strong><u>The Logging Options section</u></strong><br>
+		Choose all options needed</p>
+		<p><u>Most Recent Only to FTP</u><br>
+		This will upload a file to the FTP site with the most recent data. The file will have the 
+		Vehicle ID for its name. It will replace the previous file</p>
+		<p><u>Most Recent to FTP Log</u><br>
+		This will add the most recent data to a log file on the FTP site. The .log file will be named 
+		the vehicle ID plus the date. A new .log file will be started every day. </p>
+		<p><u>Most Recent Only to SD</u><br>
+		This will write a file to the SD card with the most recent data. The file will have the 
+		Vehicle ID for its name. It will replace the previous file</p>
+		<p><u>Most Recent to SD Log</u><br>
+		This will add the most recent data to a log file on the SD card. The .log file will be named 
+		the vehicle ID plus the date. A new .log file will be started every day. </p>
+		<p><u>Save Button</u><br>
+		Will save these choices and exit</p>
+		<p><u>Cancel Button</u><br>
+		Will not save, just exit</p>
+		<p><b>Return to the previous screen by touching the Back button.</b> </p>
+    ]]></string>
+  <string name="About_info_html"><![CDATA[
+		This app written by BusFixer
+		<p> Version Beta</p>
+		<p>The Data is written as CSV<br>
+		readable time, Vehicle ID , Block ID , Operator ID , longitude , latitude , Unix time, accuracy</p>
+		
+		<p><b>Return to the previous screen by touching the Back button.</b> </p>
+    ]]></string>
+</resources>

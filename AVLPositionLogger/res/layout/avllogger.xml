@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <EditText
+        android:id="@+id/Vehid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView3"
+        android:ems="10"
+        android:hint="@string/VehID" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/BlockID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Vehid"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:ems="10"
+        android:hint="@string/BlockNum" />
+
+    <EditText
+        android:id="@+id/oppid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/Vehid"
+        android:layout_below="@+id/BlockID"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/OpID" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/oppid"
+        android:layout_alignParentRight="true"
+        android:text="@string/OpID" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/BlockID"
+        android:layout_alignParentRight="true"
+        android:text="@string/BlockNum" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BlockID"
+        android:layout_alignParentRight="true"
+        android:text="@string/VehID" />
+
+    <TextView
+        android:id="@+id/messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/oppid"
+        android:layout_marginTop="21dp"
+        android:text="@string/begin"
+        android:textSize="@dimen/Size_20" />
+
+    <Button
+        android:id="@+id/pausebut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Startbut"
+        android:layout_alignBottom="@+id/Startbut"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pause" />
+
+    <Button
+        android:id="@+id/Stopbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messages"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="34dp"
+        android:layout_toRightOf="@+id/pausebut"
+        android:text="@string/Stop" />
+
+    <Button
+        android:id="@+id/Startbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Stopbut"
+        android:layout_alignBottom="@+id/Stopbut"
+        android:layout_marginRight="26dp"
+        android:layout_toLeftOf="@+id/pausebut"
+        android:text="@string/Start" />
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <TextView
+            android:id="@+id/help_page_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/title"
+            android:padding="2dip"
+            android:text="@string/title_html" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="4dip" >
+
+            <Button
+                android:id="@+id/mainbut"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/mainscreen"
+                android:onClick="onClickHelp"
+                android:text="@string/mainbut" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="@string/mainbut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="4dip" >
+
+            <Button
+                android:id="@+id/ftphelpbut"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ftpsetup"
+                android:onClick="onClickHelp"
+                android:text="@string/ftpbut" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="@string/ftpbut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="4dip" >
+
+            <Button
+                android:id="@+id/savesetbut"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/savesettings"
+                android:onClick="onClickHelp"
+                android:text="@string/savebut" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="@string/savebut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="4dip" >
+
+            <Button
+                android:id="@+id/aboutbut"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickHelp"
+                android:text="@string/about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="@string/about" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

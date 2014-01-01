@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AVL Position Logger</string>
+    <string name="VehID">Vehicle ID</string>
+    <string name="BlockNum">Block Number</string>
+    <string name="OpID">Operator ID</string>
+    <string name="Start">Start</string>
+    <string name="Stop">Stop</string>
+    <string name="begin">Enter Data Before Starting</string>
+    <string name="updatemins">minutes for updates</string>
+    <string name="Secs">Seconds</string>
+    <string name="host">FTP Host</string>
+    <string name="uname">User Name</string>
+    <string name="Pword">Password</string>
+    <string name="logminutes">Minutes till log event</string>
+    <string name="gpssecs">GPS Update Intervals</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="port">Port</string>
+    <string name="pause">Pause</string>
+    <string name="directory">Directory</string>
+    <string name="clear">Clear</string>
+    <string name="setupTitle">FTP Setup</string>
+    <string name="savepicker">Select Values to Save</string>
+    <string name="menuhelp">Help</string>
+    <string name="checkvid">Save Vehicle ID</string>
+    <string name="checkblock">Save Block</string>
+    <string name="checkop">Save Operator ID</string>
+    <string name="porttitle">Port default 21</string>
+    <string name="name">Name</string>
+    <string name="opSaveText">When quitting save these values for next time</string>
+    <string name="LogOptions">Choose logging methods at least one needed</string>
+    <string name="udFTPfile">Most recent location only to FTP site</string>
+    <string name="udFTPlog">Most recent location to FTP site log file</string>
+    <string name="udSDfile">Most recent location only to SD card</string>
+    <string name="udSDlog">Most recent location to SD log file</string>
+    <string name="minutes">Minutes</string>
+
+</resources>

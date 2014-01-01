@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuHelp"
+        android:title="@string/menuhelp">
+    </item>
+    <item
+        android:id="@+id/menuftpsetup"
+        android:title="@string/setupTitle">
+    </item>
+    <item
+        android:id="@+id/menusaveset"
+        android:title="@string/savepicker">
+    </item>
+
+</menu>
