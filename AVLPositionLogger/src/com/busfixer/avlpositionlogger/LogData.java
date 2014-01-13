@@ -83,7 +83,7 @@ public class LogData extends BroadcastReceiver {
 			final boolean sdfile = p.getBoolean("SFBOOL", false);
 			final boolean sdlog = p.getBoolean("SLBOOL", false);
 
-			// String replys = ""; // uncomment these for debugging FTP setup
+//			 String replys = ""; // uncomment these for debugging FTP setup
 
 			if (ftplog || sdlog) {
 				logfileName = instrings[1] + "_" + instrings[2] + ".LOG";
@@ -99,20 +99,17 @@ public class LogData extends BroadcastReceiver {
 				BusfixerFTP ftpagent = new BusfixerFTP();
 
 				if (ftpagent.ftpConnect(Host, Login, Passw, Port)) {
-					// replys = "Connect, " + ftpagent.getReplyString() + '\n';
+//					replys = "Connect, " + ftpagent.getReplyString() + '\n';
 					ftpagent.ftpChangeDirectory(Dir);
-					// replys = replys + "Change dir, " +
-					// ftpagent.getReplyString() + '\n';
+//					 replys = replys + "Change dir, " + ftpagent.getReplyString() + '\n';
 
 					if (ftplog) {
 
 						if (ftpagent.checkFileExists(logfileName)) {
-							// replys = replys + "check Exists, " +
-							// ftpagent.getReplyString() + '\n';
+//							replys = replys + "check Exists, " + ftpagent.getReplyString() + '\n';
 							ftpagent.AppendTextToFtpFile(logfileName,
 									instrings[0]);
-							// replys = replys + "Append, " +
-							// ftpagent.getReplyString() + '\n';
+//							replys = replys + "Append, " + ftpagent.getReplyString() + '\n';
 
 						} else {
 							// file not on FTP site
@@ -123,26 +120,22 @@ public class LogData extends BroadcastReceiver {
 							}
 							ftpagent.ftpUpload(pathname + "/" + fileName,
 									logfileName);
-							// replys = replys + "Upload, " +
-							// ftpagent.getReplyString() + '\n';
+//							replys = replys + "Upload, " + ftpagent.getReplyString() + '\n';
 						}
 					} // end if log
 					if (ftpfile) {
 						if (ftpagent.checkFileExists(fileName)) {
-							// replys = replys + "Check Exists, " +
-							// ftpagent.getReplyString() + '\n';
+//							replys = replys + "Check Exists, " + ftpagent.getReplyString() + '\n';
 							ftpagent.ftpRemoveFile(fileName);
-							// replys = replys + "Remove, " +
-							// ftpagent.getReplyString() + '\n';
+//							replys = replys + "Remove, " + ftpagent.getReplyString() + '\n';
 						}
 						ftpagent.ftpUpload(pathname + "/" + fileName, fileName);
-						// replys = replys + "Upload, " +
-						// ftpagent.getReplyString() + '\n';
+//						replys = replys + "Upload, " + ftpagent.getReplyString() + '\n';
 					}// End if file
 					ftpagent.ftpDisconnect();
-					// replys = replys + "Disconnect, " +
-					// ftpagent.getReplyString() + '\n';
+//					replys = replys + "Disconnect, " + ftpagent.getReplyString() + '\n';
 				}
+//				else{ replys = replys + "Connection Failed " + '\n';}
 			}// END if ftplog or ftpfile
 
 			if (sdfile) {
@@ -157,7 +150,7 @@ public class LogData extends BroadcastReceiver {
 			if (sdlog) {
 				appendToFileOnSD(Dir + "/" + logfileName, instrings[0], 128);
 			}
-			// appendToFileOnSD(Dir + "/" + "Reply.txt", replys, 512); // not
+//			 appendToFileOnSD(Dir + "/" + "Reply.txt", replys, 512); // not
 			// checking for SD card
 			return null;
 		} // end doInBackground
